@@ -1,10 +1,13 @@
 import React from "react";
 
 const LandingPage = () => {
+  const updateNum = () => {
+    console.log("test function");
+  };
+
   return (
     <>
-      <div>LandingPage</div>
-      <div></div>
+      <div onClick={updateNum}>LandingPage</div>
     </>
   );
 };
