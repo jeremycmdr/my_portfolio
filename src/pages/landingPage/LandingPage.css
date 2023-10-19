@@ -1,0 +1,101 @@
+.content_container {
+  width: 55%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.who_i_am {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.who_i_am span {
+  font-size: 26px;
+  color: #3b848f;
+  cursor: pointer;
+}
+
+.what_i_am {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-indent: 15px;
+}
+
+.visit_my_town {
+  text-decoration: none;
+  color: #37a7b8;
+  font-weight: bold;
+}
+
+.what_is_this_all_about {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-indent: 15px;
+}
+
+.find_me_on_social_media {
+  display: inline-block;
+}
+
+.social_media_svg {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.github {
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../../svg/github.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.linkedin {
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../../svg/linkedin.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.linkedin:hover {
+  background-image: url(../../svg/linkedin_light.svg);
+}
+
+.facebook:hover {
+  background-image: url(../../svg/facebook_light.svg);
+}
+
+.github:hover {
+  background-image: url(../../svg/github_light.svg);
+}
+
+.mail_to:hover {
+  background-image: url(../../svg/mail_to_light.svg);
+}
+
+.facebook {
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../../svg/facebook.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.mail_to {
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../../svg/mail_to.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
