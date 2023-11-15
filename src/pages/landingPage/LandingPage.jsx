@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
 import Header from "./../../components/header/Header.jsx";
@@ -32,6 +31,15 @@ const LandingPage = () => {
       setToProjects(false);
     }
   };
+
+  var aa = [
+    { time: ["2023-11-15", "2023-11-15"] },
+    { time: ["2023-11-16", "2023-11-16"] },
+    { time: ["2023-11-17", "2023-11-17"] },
+    { time: ["2023-11-20", "2023-11-20"] },
+    { time: ["2023-11-21", "2023-11-21"] },
+    { time: ["2023-11-22", "2023-11-22"] },
+  ];
 
   return (
     <>
