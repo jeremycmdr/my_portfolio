@@ -11,7 +11,6 @@ const LandingPage = () => {
   const [toProjects, setToProjects] = useState(false);
   const [toAbout, setToAbout] = useState(false);
   const [toContact, setToContact] = useState(false);
-  const email = "jeremijavaragic@gmail.com";
 
   const setContent = (data) => {
     if (data === "projects") {
@@ -90,39 +89,6 @@ const LandingPage = () => {
             Thank you for taking the time to get to know me, and I look forward
             to the opportunity to work together and turn ideas into reality.
           </div>
-          <div
-            style={{ marginTop: "20px" }}
-            className="find_me_on_social_media"
-          >
-            - find me on :
-          </div>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/jeremija-varagi%C4%87/"
-            rel="noreferrer"
-            className="social_media_svg linkedin"
-          >
-            {" "}
-          </a>
-          <a
-            target="_blank"
-            href="https://github.com/jeremycmdr"
-            rel="noreferrer"
-            className="social_media_svg github"
-          >
-            {" "}
-          </a>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/jeremija.varagic"
-            rel="noreferrer"
-            className="social_media_svg facebook"
-          >
-            {" "}
-          </a>
-          <a href={`mailto:${email}`} className="social_media_svg mail_to">
-            {" "}
-          </a>
         </div>
       )}
     </>
