@@ -48,7 +48,7 @@ const LandingPage = () => {
           </div>
 
           <div className="what_i_am">
-            a passionate web developer with one year of experience in the
+            a passionate web developer with two year of experience in the
             dynamic world of web development. I'm based in the beautiful town of{" "}
             <a
               className="visit_my_town"
