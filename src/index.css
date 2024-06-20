@@ -12,7 +12,6 @@ code {
     monospace;
 }
 
-/* src/styles/styles.css */
 :root {
   --background-light: #ffffff;
   --text-light: #000000;
@@ -30,23 +29,6 @@ body.dark-theme {
   color: var(--text-dark);
 }
 
-.header_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: inherit; /* Inherit background color based on theme */
-}
-
-.menu_options_container {
-  display: flex;
-  gap: 15px;
-}
-
-.menu_option {
-  cursor: pointer;
-}
-
 .theme_toggle img {
   width: 30px;
   height: 30px;
@@ -54,9 +36,9 @@ body.dark-theme {
 }
 
 .light-theme .theme_toggle img {
-  filter: invert(0); /* No inversion for light theme */
+  filter: invert(0);
 }
 
 .dark-theme .theme_toggle img {
-  filter: invert(1); /* Invert colors for dark theme */
+  filter: invert(1);
 }

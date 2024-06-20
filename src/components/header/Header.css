@@ -1,8 +1,9 @@
 .header_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
+  padding: 20px;
+  background-color: inherit;
   margin: 80px auto;
 }
 
@@ -43,4 +44,20 @@
 
   border-right: 2px dashed gray;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .content_container {
+    width: 90% !important;
+  }
+
+  .header_container {
+    display: block;
+  }
+
+  .menu_options_container {
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
