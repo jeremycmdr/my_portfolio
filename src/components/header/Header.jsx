@@ -1,30 +1,29 @@
-import React, { useState } from "react";
-
+import React from "react";
+import { useTheme } from "../../context/ThemeContext";
 import "./Header.css";
+import lightThemeIcon from "../../svg/light_mode.svg";
+import darkThemeIcon from "../../svg/dark_mode.svg";
 
 const Header = (props) => {
-  const [theme, setTheme] = useState(false);
-
-  const changeTheme = () => {
-    setTheme(!theme);
-  };
+  const { theme, toggleTheme } = useTheme();
 
   const toContent = (data) => {
-    if (data === "projects") {
-      props.content("projects");
-    } else if (data === "about") {
-      props.content("about");
-    } else if (data === "contact") {
-      props.content("contact");
-    } else {
-      props.content("landing");
-    }
+    props.content(data);
   };
+
+  React.useEffect(() => {
+    document.body.className = theme === "light" ? "light-theme" : "dark-theme";
+  }, [theme]);
 
   return (
     <>
       <div className="header_container">
-        <div onClick={() => toContent("landing")} className="landing_page_logo">
+        <div
+          onClick={() => toContent("landing")}
+          className={
+            theme === "light" ? "landing_page_logo" : "landing_page_logo_light"
+          }
+        >
           <div>Jeremy</div>
         </div>
 
@@ -42,10 +41,12 @@ const Header = (props) => {
           >
             contact
           </div>
-          <div
-            onClick={changeTheme}
-            className={theme ? "light_theme_img" : "dark_theme_img"}
-          ></div>
+          <div onClick={toggleTheme} className="theme_toggle">
+            <img
+              src={theme === "light" ? lightThemeIcon : darkThemeIcon}
+              alt="theme icon"
+            />
+          </div>
         </div>
       </div>
     </>

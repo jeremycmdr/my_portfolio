@@ -19,6 +19,19 @@
   cursor: pointer;
 }
 
+.landing_page_logo_light {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 180px;
+  height: 50px;
+
+  background: url(./../../svg/default_logo_light.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
 .menu_options_container {
   display: flex;
   align-items: center;
@@ -29,25 +42,5 @@
   padding-right: 10px;
 
   border-right: 2px dashed gray;
-  cursor: pointer;
-}
-
-.light_theme_img {
-  width: 30px;
-  height: 30px;
-
-  background: url(./../../svg/light_mode.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-
-.dark_theme_img {
-  width: 30px;
-  height: 30px;
-
-  background: url(./../../svg/dark_mode.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   cursor: pointer;
 }

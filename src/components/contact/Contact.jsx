@@ -1,7 +1,9 @@
 import React from "react";
-import "./Contact.css";
+import { useTheme } from "../../context/ThemeContext";
 
 const Contact = () => {
+  const { theme } = useTheme();
+  console.log(theme);
   const email = "jeremijavaragic@gmail.com";
   return (
     <>
@@ -13,7 +15,10 @@ const Contact = () => {
           target="_blank"
           href="https://www.linkedin.com/in/jeremija-varagi%C4%87/"
           rel="noreferrer"
-          className="social_media_svg linkedin"
+          className={
+            "social_media_svg linkedin" +
+            (theme === "dark" ? " linkedin_light" : "")
+          }
         >
           {" "}
         </a>
@@ -21,7 +26,10 @@ const Contact = () => {
           target="_blank"
           href="https://github.com/jeremycmdr"
           rel="noreferrer"
-          className="social_media_svg github"
+          className={
+            "social_media_svg github" +
+            (theme === "dark" ? " github_light" : "")
+          }
         >
           {" "}
         </a>
@@ -29,11 +37,20 @@ const Contact = () => {
           target="_blank"
           href="https://www.facebook.com/jeremija.varagic"
           rel="noreferrer"
-          className="social_media_svg facebook"
+          className={
+            "social_media_svg facebook" +
+            (theme === "dark" ? " facebook_light" : "")
+          }
         >
           {" "}
         </a>
-        <a href={`mailto:${email}`} className="social_media_svg mail_to">
+        <a
+          href={`mailto:${email}`}
+          className={
+            "social_media_svg mail_to" +
+            (theme === "dark" ? " mail_to_light" : "")
+          }
+        >
           {" "}
         </a>
       </div>

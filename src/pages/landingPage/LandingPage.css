@@ -13,7 +13,6 @@
 .who_i_am span {
   font-size: 26px;
   color: #3b848f;
-  cursor: pointer;
 }
 
 .what_i_am {
@@ -35,6 +34,7 @@
 }
 
 .find_me_on_social_media {
+  font-size: 20px;
   display: inline-block;
 }
 
@@ -45,8 +45,8 @@
 }
 
 .github {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 
   background-image: url(../../svg/github.svg);
   background-repeat: no-repeat;
@@ -54,14 +54,22 @@
   cursor: pointer;
 }
 
+.github_light {
+  background-image: url(../../svg/github_light.svg);
+}
+
 .linkedin {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 
   background-image: url(../../svg/linkedin.svg);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+
+.linkedin_light {
+  background-image: url(../../svg/linkedin_light.svg);
 }
 
 .linkedin:hover {
@@ -81,8 +89,8 @@
 }
 
 .facebook {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 
   background-image: url(../../svg/facebook.svg);
   background-repeat: no-repeat;
@@ -90,12 +98,56 @@
   cursor: pointer;
 }
 
+.facebook_light {
+  background-image: url(../../svg/facebook_light.svg);
+}
+
 .mail_to {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 
   background-image: url(../../svg/mail_to.svg);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+
+.mail_to_light {
+  background-image: url(../../svg/mail_to_light.svg);
+}
+
+.progressBar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  position: relative;
+  animation: fillProgress 2s ease-out forwards;
+}
+
+.progressText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
 }
