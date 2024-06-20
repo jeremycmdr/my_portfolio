@@ -7,13 +7,13 @@ const Projects = () => {
 
       title: "How to cancel Axios request?",
       description: "This is a small project I worked on.",
-      link: "https://github.com/jeremycmdr/axios-cancel-test",
+      link: "https://jeremycmdr.github.io/axios_live/",
     },
     {
       id: 2,
       title: "Portfolio",
       description: "This is my personal portfolio website.",
-      link: "https://github.com/jeremycmdr/my_portfolio",
+      link: "https://jeremycmdr.github.io/portfolio_live/",
     },
   ];
   return (
