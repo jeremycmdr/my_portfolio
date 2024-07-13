@@ -54,6 +54,20 @@
   cursor: pointer;
 }
 
+.right {
+  width: 30px;
+  height: 30px;
+
+  background-image: url(../../svg/right_light.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.right_light {
+  background-image: url(../../svg/right_dark.svg);
+}
+
 .github_light {
   background-image: url(../../svg/github_light.svg);
 }
@@ -150,4 +164,44 @@
   to {
     width: 95%;
   }
+}
+
+.project {
+  border: 1px dashed #a19c9c;
+  margin-bottom: 10px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.about_project_dark {
+  padding: 6px 0px 6px 0px;
+  border-bottom: 1px solid #929292;
+  border-top: 1px solid #929292;
+}
+
+.about_project_light {
+  padding: 6px 0px 6px 0px;
+  border-bottom: 1px solid #4f4f4f;
+  border-top: 1px solid #4f4f4f;
+}
+
+.project_start_date {
+  font-size: 15px;
+}
+
+.project_date {
+  font-size: 12px;
+  color: #cc2a42;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.battery_icon {
+  width: 45px;
+  height: 45px;
 }

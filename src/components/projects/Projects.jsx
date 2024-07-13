@@ -1,21 +1,7 @@
 import React from "react";
+import projectsData from "../../projectslist";
 
 const Projects = () => {
-  const projectsData = [
-    {
-      id: 1,
-
-      title: "How to cancel Axios request?",
-      description: "This is a small project I worked on.",
-      link: "https://jeremycmdr.github.io/axios_live/",
-    },
-    {
-      id: 2,
-      title: "Portfolio",
-      description: "This is my personal portfolio website.",
-      link: "https://jeremycmdr.github.io/portfolio_live/",
-    },
-  ];
   return (
     <>
       <div className="content_container">

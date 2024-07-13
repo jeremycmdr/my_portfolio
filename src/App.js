@@ -4,6 +4,7 @@ import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Landing from "./pages/landingPage/LandingPage";
+import "./App.css";
 
 const App = () => {
   const [content, setContent] = useState("landing");
@@ -22,7 +23,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="width_page_container">
       <Header content={setContent} />
       {renderContent()}
     </div>
