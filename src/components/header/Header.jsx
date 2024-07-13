@@ -28,9 +28,9 @@ const Header = (props) => {
         </div>
 
         <div className="menu_options_container">
-          <div onClick={() => toContent("projects")} className="menu_option">
+          {/* <div onClick={() => toContent("projects")} className="menu_option">
             projects
-          </div>
+          </div> */}
           <div onClick={() => toContent("about")} className="menu_option">
             about
           </div>
